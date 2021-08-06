@@ -4,7 +4,7 @@
  * Compilation : gcc -o fibonacci.c
  * Execution : ./fibonacci
  *
- * Anupam Gupta and 1910990303  07/08/21
+ * Anupam Gupta and 1910990303  06/08/21
  * Assignment -> Assignment_5
  */
 #include <stdio.h>

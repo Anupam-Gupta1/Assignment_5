@@ -14,6 +14,7 @@ int j = 1;
 int k;
 int c=1;
 
+//Finding value in fibonacci series
 int fibo()
 {
     k=i+j;
@@ -33,11 +34,16 @@ int fibo()
 void fib(int n) 
 {
     int a;
+
+    //Base Case
     if(n==0)
     {
         return 0;
     }
+
+    //Calling the fibo function for fibonacci series
     a = fibo();
+
     if(n>0)
     {
         printf("%d", a);
@@ -46,6 +52,8 @@ void fib(int n)
             printf(",");
         }
     }
+
+    //Recursively calling the function 
     fib(n-1);    
 }
 
@@ -53,6 +61,8 @@ int main()
 {
     int n;
     scanf("%d", &n);
+
+    //Calling function to get every 3rd fibonacci numbers n times
     fib(n);
     return 0;
 }

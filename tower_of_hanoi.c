@@ -9,8 +9,10 @@
  */
 #include <stdio.h>
 
+//Universal variable to calculate number of movements required to shift the tower
 int count=0;
 
+//function for shifting tower from 'from' to 'to'
 void tower_of_hanoi(int n, char from, char to, char aux)
 {
     if(n==1)
@@ -27,8 +29,10 @@ void tower_of_hanoi(int n, char from, char to, char aux)
 
 int main() 
 {
+    //Calling the function	
     tower_of_hanoi(3,'A','C','B');
+
+    //printing the number of movements taken to move tower from 'from' to 'to'
     printf("Total movements required = %d", count);
     return 0;
 }
-

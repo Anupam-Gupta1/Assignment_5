@@ -9,13 +9,16 @@
  */
 #include <stdio.h>
 
+//Function to calculate the index which has the minimum value in the array
 int min_index(int a[], int index, int n1)
 {
     if(index == n1)
     {
         return index;
     }
+
     int min = min_index(a, index+1, n1);
+    
     if(a[index] < a[min])
     {
         return index;
@@ -27,6 +30,7 @@ int min_index(int a[], int index, int n1)
 
 }
 
+//Function for sorting of array
 void selection_sort(int a[], int c_index, int n)
 {
     //For getting the index having the least value in the array
